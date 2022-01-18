@@ -48,6 +48,7 @@ export class AppComponent implements AfterViewInit {
     @cached() public secondsPassed: number = 0
 
     constructor(private notification: MatSnackBar) {
+        console.log(1);
 
     }
 
