@@ -47,7 +47,9 @@ export class AppComponent implements AfterViewInit {
     @cached() public isStarted: boolean = false
     @cached() public secondsPassed: number = 0
 
-    constructor(private notification: MatSnackBar) {}
+    constructor(private notification: MatSnackBar) {
+
+    }
 
     notifyWith(message: string): void {
         this.notification
