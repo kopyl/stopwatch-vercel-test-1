@@ -1,0 +1,35 @@
+// @use 'sass:map'
+// @use '@angular/material' as mat
+
+// $color-config: mat.get-color-config($theme)
+// $accent-palette: map.get($color-config, 'accent')
+
+// @import '~@angular/material/theming'
+// @include mat-core()
+
+// $custom-theme-primary: mat-palette($mat-light-blue)
+// $custom-theme-accent: mat-palette($mat-light-blue, A200, A100, A900)
+
+// $custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent)
+
+// @include angular-material-theme($custom-theme)
+
+*, *:before, *:after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+html, body
+    width: 100%
+    height: 100%
+    background: black
+    color: white
+
+.cdk-global-overlay-wrapper
+    @media screen and ( max-width: 500px)
+        align-items: flex-start !important
+
+.blue-snackbar
+    background: rgba(255,255,255,.12)
+    color: white

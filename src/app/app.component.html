@@ -1,0 +1,33 @@
+<section>
+    <h1>{{secondsPassed | hhmmss}}</h1>
+
+    <div class=buttons>
+        <button
+            class=restart
+            mat-flat-button
+            color=primary
+            (click)=handleStopStopwatch()
+        >
+            {{isPaused || !isStarted ? 'Start timer' : 'Stop timer'}}
+        </button>
+
+        <button
+            class=resume-pause
+            (click)=pauseButtonClick($event)
+            mat-flat-button
+            color=accent
+            [disabled]=!isStarted
+        >
+            {{ isPaused ? 'Resume' : 'Pause' }}
+        </button>
+
+        <button
+            class=wait
+            mat-flat-button
+            (click)=restartStopwatch()
+            [disabled]=!isStarted
+        >
+            Reset
+        </button>
+    </div>
+</section>
