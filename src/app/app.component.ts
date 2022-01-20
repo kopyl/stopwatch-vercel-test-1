@@ -49,7 +49,6 @@ export class AppComponent implements AfterViewInit {
 
     constructor(private notification: MatSnackBar) {
         console.log(1);
-
     }
 
     notifyWith(message: string): void {
